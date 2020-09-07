@@ -1,0 +1,62 @@
+****DDL*****
+//Create table student
+CREATE TABLE student(
+	student_name TEXT,
+	enrollment_no INTEGER PRIMARY KEY,
+	cgpa DECIMAL,
+	area TEXT,
+	branch VARCHAR(30)
+);
+
+//Alter table student schema
+ALTER TABLE student ALTER COLUMN student_name SET NOT NULL;
+ALTER TABLE student ALTER COLUMN cgpa SET NOT NULL;
+ALTER TABLE student ALTER COLUMN area SET NOT NULL;
+ALTER TABLE student ALTER COLUMN branch SET NOT NULL;
+
+//Truncating table
+TRUNCATE TABLE student;
+
+****DQL****
+//Getting and printing columns from the table
+SELECT enrollment_no, student_name,cgpa FROM student; 
+
+
+****DML*****
+//Inserting data in table student
+INSERT INTO student
+Values ('Ankit Gupta', 001, 8.11, 'Delhi', 'HUF'),
+('Hello World', 002, 8.11, 'Delhi', 'HUF'),
+('Hewlett Packard', 003, 7.41, 'Odisha', 'GRE'),
+('Apple Windows', 004, 9.5, 'Bangalore', 'BLR');
+
+//Updating data in tale student
+UPDATE student SET branch='DEL' where enrollment_no=001;
+UPDATE student SET branch='DEL' where enrollment_no=002;
+
+//Deleting data from the table
+DELETE FROM student WHERE enrollment_no=003;
+
+****DCL****
+//Creating user (experiment_one)
+CREATE USER experiment_one with encrypted password 'hey_there';
+
+//Granting access to user (experiment_one)
+GRANT SELECT, UPDATE ON student to experiment_one;
+
+//Revoking access
+REVOKE SELECT ON student FROM experiment_one;
+
+****Indexes****
+//Create index of one or multiple columns
+CREATE INDEX cgpa_index on student(cgpa);
+
+//Deleting index
+DROP INDEX cgpa_index;
+
+****Views****
+//Create view for student name and cgpa
+CREATE VIEW student_view AS SELECT student_name, cgpa FROM student;
+
+//Drop view student_view
+DROP VIEW student_view;
