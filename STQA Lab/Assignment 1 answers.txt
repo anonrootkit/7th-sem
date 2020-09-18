@@ -1,0 +1,20 @@
+1- Worst
+2- Review
+3- Dynamic
+4- Negative
+5- Inclusive
+6- Logical
+7- Interface
+8- Suite
+9- Limited entry
+10- Verification
+11- Stress
+12- Regression
+13- blackbox
+14- specification
+15- Failure
+16- System
+17- assurance
+18- debugging
+19- white-box
+20- Error
