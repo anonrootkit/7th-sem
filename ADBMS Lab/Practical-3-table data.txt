@@ -1,0 +1,88 @@
+regions -
+1 - africa
+2 - antarctica
+3 - asia
+4 - europe
+5 - north america
+6 - south america
+7 - oceania
+
+countries - 
+
+ country_id | country_name  | region_id
+------------+---------------+-----------
+ AL         | Algeria       |         1
+ AN         | Angola        |         1
+ BE         | Benin         |         1
+ AF         | Afghanistan   |         3
+ IN         | India         |         3
+ GR         | Germany       |         3
+ JP         | Japan         |         3
+ GL         | Greenland     |         2
+ PT         | Portland      |         4
+ US         | United states |         4
+
+
+locations -
+
+1 - "Oran-algeria" - 31000 - 'Oran' - 'Oran Province' - 'AL'
+2 - "Shin-angola" - 11000 - 'Shin' - 'Spult Province' - 'AN'
+3 - "Delhi-India" - 110000 - 'Delhi' - 'Punjab' - 'IN'
+4 - "Mysuru-India" - 570000 - 'Mysuru' - 'Karnataka' - 'IN'
+5 - "Karnataka-India" - 560000 - 'Bangaluru' - 'Karnataka' - 'IN'
+6 - "Mumbai-India" - 90000 - 'Mumbai' - 'Maharashtra'- 'IN'
+7 - "Punjab-India" - 120000 - 'Punjab' - 'Punjab' - 'IN'
+8 - "Jammu-India" - 150000 - 'Jammu' - 'Jammu' - 'IN'
+9 - "Assam-India" - 980000 - 'Assam' - 'Assam' - 'IN'
+
+departments -
+
+(1, 'Storage domain', 1, 1),
+(2, 'IT domain', 2, 3),
+(3, 'Network domain', 3, 1),
+(4, 'Wintel domain', 4, 3),
+(5, 'Technical domain', 5, 1),
+(6, 'Services domain', 6, 3),
+(7, 'Hardware domain', 7, 1),
+(8, 'Software domain', 8, 3),
+(9, 'Nightly domain', 9, 1),
+(10, 'Early domain', 10, 3),
+(11, 'Sh clerk', 11, 3);
+
+jobs -
+
+(1, 'Storage admin', 1, 10),
+(2, 'Backup admin', 2, 30),
+(3, 'Network admin', 3, 10),
+(4, 'Wintel admin', 4, 30),
+(5, 'Technical admin', 5, 10),
+(6, 'Services admin', 6, 30),
+(7, 'Hardware admin', 7, 10),
+(8, 'Software admin', 8, 30),
+(9, 'Nightly admin', 9, 10),
+(10, 'Early admin', 10, 30);
+
+employees -
+
+(1, 'Ankit', 'Gupta', 'ankit@gmail.com', 1234, '2020-12-23', 2, 10, 10, 2, 2),
+(2, 'It', 'Gupta', 'ankit@gmil.com', 1234, '2020-12-23', 3, 10, 10, 3, 3),
+(3, 'Kit', 'Gupta', 'ankit@mail.com', 1234, '2020-12-23', 4, 10, 10, 4, 4),
+(4, 'Nkit', 'Gupta', 'ankit@gail.com', 1234, '2020-12-23', 2, 10, 10, 2, 2),
+(5, 'Ank', 'Gupta', 'ankit@gmai.com', 1234, '2020-12-23', 1, 10, 10, 1, 1),
+(6, 'An', 'Gupta', 'ankit@gil.com', 1234, '2020-12-23', 5, 10, 10, 5, 5),
+(7, 'A', 'Gupta', 'ankit@gl.com', 1234, '2020-12-23', 5, 10, 10, 5, 5),
+(8, 'T', 'Gupta', 'ankit@ail.com', 1234, '2020-12-23', 6, 10, 10, 6, 6),
+(9, 'Nki', 'Gupta', 'ankit@il.com', 1234, '2020-12-23', 8, 10, 10, 8, 8),
+(10, 'Kit', 'Ga', 'ankit@ai.com', 1234, '2020-12-23', 9, 10, 10, 9, 9);
+
+job history - 
+
+(2, '2020-12-30', '2020-12-31', 2, 2),
+(3, '2020-12-30', '2020-12-31', 4, 4),
+(4, '2020-12-30', '2020-12-31', 2, 2),
+(5, '2020-12-30', '2020-12-31', 1, 1),
+(6, '2020-12-30', '2020-12-31', 1, 1),
+(7, '2020-12-30', '2020-12-31', 1, 1),
+(8, '2020-12-30', '2020-12-31', 1, 1),
+(9, '2020-12-30', '2020-12-31', 1, 1),
+(10, '2020-12-30', '2020-12-31', 1, 1);
